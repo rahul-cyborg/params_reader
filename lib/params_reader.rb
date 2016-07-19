@@ -29,3 +29,5 @@ module ParamsReader
     end
   end
 end
+
+require "params_reader/railtie" if defined? Rails::Railtie
