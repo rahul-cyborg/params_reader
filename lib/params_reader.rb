@@ -1,8 +1,8 @@
 require "params_reader/version"
-#require "params_reader/railtie"
+require "params_reader/railtie"
 
 module ParamsReader
-  class Reader 
+  class ParamsReader 
     def initialize(app)
       @app = app
     end 
@@ -29,5 +29,3 @@ module ParamsReader
     end
   end
 end
-
-require "params_reader/railtie" if defined? Rails::Railtie
