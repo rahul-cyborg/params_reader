@@ -2,7 +2,7 @@ require "params_reader/version"
 #require "params_reader/railtie"
 
 module ParamsReader
-  class ParamsReader 
+  class Reader 
     def initialize(app)
       @app = app
     end 
