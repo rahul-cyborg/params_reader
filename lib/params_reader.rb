@@ -2,7 +2,7 @@ require "params_reader/version"
 require "params_reader/railtie"
 
 module ParamsReader
-  #class ParamsReader 
+  class Reader 
     def initialize(app)
       @app = app
     end 
@@ -27,5 +27,5 @@ module ParamsReader
       response.set_cookie("utm_campaign", {:value => params['utm_campaign'], :expires => Time.now+360*24*60*60})
       response.set_cookie("channel", {:value => params['channel'], :expires => Time.now+360*24*60*60})
     end
-  #end
+  end
 end
