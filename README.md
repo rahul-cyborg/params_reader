@@ -1,4 +1,4 @@
-# ParamsReader
+# Params Reader
 
 Welcome to your ParamsReader gem!. This gem for reading utm parameters and storing in database.
 
@@ -27,7 +27,7 @@ Add this line of code in your registration function:
 
 ```ruby
 ParamsReader.create(user.id,cookies)
-
+```
 
 ## Contributing
 
