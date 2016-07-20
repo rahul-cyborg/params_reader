@@ -3,13 +3,10 @@ require 'rails/generators/active_record'
 
 module ParamsReader
   module Generators
-    class ParamsReaderGenerator < ActiveRecord::Generators::Base
 
-      include Rails::Generators::ResourceHelpers
-
-      namespace "params_reader"
-
-      desc "Creates Params Reader Migrations"
+    class InstallGenerator < Rails::Generators::Base
+       include Rails::Generators::Migration
+       include ActiveRecord::Generators::Migration
 
       source_root File.expand_path("../templates", __FILE__)
 

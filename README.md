@@ -17,7 +17,7 @@ And then execute:
 
 And then execute:
 
-    $ rails generate params_reader campaign_data
+    $ rails generate params_reader:install
 
 And then execute:
 
@@ -26,10 +26,8 @@ And then execute:
 Add this line of code in your registration function:
 
 ```ruby
-ParamsReader.create(user_id,cookies)
+ParamsReader.wtire_params(user_id,cookies)
 ```
 
-## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/rahul-cyborg/params_reader.
 
