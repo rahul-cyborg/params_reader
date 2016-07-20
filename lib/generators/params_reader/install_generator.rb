@@ -5,9 +5,10 @@ module ParamsReader
   module Generators
 
     class InstallGenerator < Rails::Generators::Base
-       include Rails::Generators::Migration
-       include ActiveRecord::Generators::Migration
 
+      include Rails::Generators::Migration
+      include ActiveRecord::Generators::Migration
+      
       source_root File.expand_path("../templates", __FILE__)
 
       def copy_migration
