@@ -1,7 +1,20 @@
 require "params_reader/version"
 require "params_reader/railtie"
 
+require "rubygems"
+require "active_record"
+
+
 module ParamsReader
+
+  def self.create(user_id,cookies)
+    if cookies[:utm_source]
+      CampaignDatum.create(:user_id => user_id,:utm_source => cookies[:utm_source],:utm_medium => cookies[:utm_medium],
+        :utm_term => cookies[:utm_term],:utm_content => cookies[:utm_content],:utm_campaign => cookies[:utm_campaign],
+        :channel => cookies[:channel])
+    end
+  end
+  
   class ParamsReader 
     def initialize(app)
       @app = app
@@ -9,7 +22,7 @@ module ParamsReader
    
     def call(env)
        request = Rack::Request.new(env)
-       if request.params['utm_source'] && request.cookies['utm_source'].nil? && request.path_info == '/'
+       if request.params['utm_source'] && request.cookies['utm_source'].nil?
            status, headers, body = @app.call(env)
            response = Rack::Response.new body, status, headers
            set_parmas_cookie(response, request.params)
