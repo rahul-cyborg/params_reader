@@ -26,7 +26,7 @@ And then execute:
 Add this line of code in your registration function:
 
 ```ruby
-ParamsReader.create(user.id,cookies)
+ParamsReader.create(user_id,cookies)
 ```
 
 ## Contributing
