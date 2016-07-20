@@ -21,7 +21,7 @@ And then execute:
 
 And then execute:
 
-    $ rake db:migraterake
+    $ rake db:migrate
 
 Add this line of code in your registration function:
 
