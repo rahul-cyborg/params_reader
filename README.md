@@ -1,6 +1,6 @@
 # Params Reader
 
-Welcome to ParamsReader gem!. This gem for setting utm parameters in cookies and storing in database after Registartion.
+Welcome to ParamsReader gem!. This gem for setting utm parameters in cookies using ParamsReader as rack middleware and storing in database after Registartion.
 
 
 ## Installation
