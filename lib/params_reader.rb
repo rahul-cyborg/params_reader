@@ -1,9 +1,7 @@
 require "params_reader/version"
 require "params_reader/railtie"
-
 require "rubygems"
 require "active_record"
-
 
 module ParamsReader
 
