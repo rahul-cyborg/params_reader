@@ -4,9 +4,9 @@ Welcome to ParamsReader gem!. This gem for setting utm parameters in cookies usi
 
 ## Limitations
 
-(1) This gem can be integrated only with Rails app
-(2) For Installing this gem Rails app must have User Model. This gem can not be integrated with Admin Model.
-(3) `utm_source` parameter must be pass on landing page url.
+1. This gem can be integrated only with Rails app.
+2. For Installing this gem Rails app must have User Model. This gem can not be integrated with Admin Model.
+3. `utm_source` parameter must be pass on landing page url.
 
 
 ## Installation
