@@ -5,9 +5,9 @@ require "active_record"
 
 module ParamsReader
 
-  def self.wtire_params(user_id,cookies)
+  def wtire_params(cookies)
     if cookies[:utm_source]
-      CampaignDatum.create(:user_id => user_id,:utm_source => cookies[:utm_source],:utm_medium => cookies[:utm_medium],
+      CampaignDatum.create(:user_id => id,:utm_source => cookies[:utm_source],:utm_medium => cookies[:utm_medium],
         :utm_term => cookies[:utm_term],:utm_content => cookies[:utm_content],:utm_campaign => cookies[:utm_campaign],
         :channel => cookies[:channel])
     end

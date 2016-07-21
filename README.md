@@ -29,10 +29,16 @@ And then execute:-
 
     $ rake db:migrate
 
+Add this line of code in User Model:
+
+```ruby
+include ParamsReader
+```
+
 Add this line of code in your registration function:
 
 ```ruby
-ParamsReader.wtire_params(user_id,cookies)
+user.wtire_params(cookies)
 ```
 
 
