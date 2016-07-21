@@ -1,5 +1,5 @@
 require "params_reader/version"
-require "params_reader/railtie"
+require "params_reader/railtie" if defined?(Rails)
 require "rubygems"
 require "active_record"
 
