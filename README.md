@@ -14,7 +14,7 @@ Welcome to ParamsReader gem!. This gem for setting utm parameters in cookies usi
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'params_reader', github: 'rahul-cyborg/params_reader'
+gem 'params_reader', github: 'rahul-cyborg/params_reader', tag: 'v0.1.0'
 ```
 
 And then execute:
